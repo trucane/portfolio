@@ -39,7 +39,7 @@ class About extends React.Component {
               <Typography variant="h5" gutterBottom>About Me</Typography>
               <Typography variant="overline">
                 I am a computer programer. As amazing as that sounds it is
-                true. You know when you are fullfilled in life when you can
+                true. You know you are fullfilled in life when you can
                 honestly say you are doing something you love. I have a passion
                 for creation and programming is the ultimate form of art. I have
                 a thirst for learning and programming offers a continuous change
@@ -165,11 +165,11 @@ class About extends React.Component {
             <Box className={this.props.classes.aboutBox}>
                 <Typography variant="h4" gutterBottom>Activities</Typography>
                 <Typography variant="overline">
-                    There is nothing more than I like othe than coding and that's my family.
+                    There is nothing that I like other than coding and that's my family.
                     When it's time to relax that means it's time to play with the kids. People say
                     I need to get out more but family is the moment I say "I have it all". On the 
-                    occasion I do go out its enjoying what I think the outside world have to offer and 
-                    sitting in a chair behind a desk most of the time that means getting in to something active.
+                    occasion I do go outside, its enjoying what I think the outside world has to offer.
+                    Sitting in a chair behind a desk most of the time creates a need for something active.
                     The Beach, Paintballing with friends and family, Golfing for that quiet outdoor time.
                     AND.. maybe I cheat a little and attend a local Hack-A-Thon or 2. 
                 </Typography>
