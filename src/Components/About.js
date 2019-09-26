@@ -99,7 +99,7 @@ class About extends React.Component {
                 <Box>
                     <Button>
                     <Link href='/projects'>
-                    View Projects
+                    View My Projects
                 </Link>
                     </Button>
                 </Box>
