@@ -1,4 +1,6 @@
 export const styles = {
+
+    topBarLink:{color:'#fff', margin:'0 5px'},
     barBackground:{background:'#2E2E2E'},
 
 

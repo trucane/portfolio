@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
+import Link from "@material-ui/core/Link";
 
 
 
@@ -22,9 +23,11 @@ class TopMenu extends React.Component{
               <IconButton edge="start" color="inherit" aria-label="menu">
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6">Henry Leverette</Typography>
+              <Typography variant="h6" style={{flexGrow:1}}>Henry Leverette</Typography>
               
-              <Button >Projects </Button>
+              <Link href='/' className={this.props.classes.topBarLink}>Home</Link>
+              <Link href='/about' className={this.props.classes.topBarLink} >About</Link>
+              <Link href='/projects' className={this.props.classes.topBarLink}>Projects</Link>
             </Toolbar>
           </AppBar>
 

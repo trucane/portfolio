@@ -87,7 +87,8 @@ class About extends React.Component {
             <Grid item xs={12}>
                 <Box className={this.props.classes.aboutBox}>
                 <Typography variant='h4' gutterBottom>Skills</Typography>
-                I started my journey off self taught learning the basic skills HTML, CSS. Then dove into
+                <Typography variant='overline'>
+                    I started my journey off self taught learning the basic skills HTML, CSS. Then dove into
                     more interactive coding with Javscript. I wanted to do backend instead of using API's so I dove into
                     PHP and MySQL. Later, popular coding was Angular so I dived deep into AngularFire and WOW! I really
                     fell in love. Then came Lambda School. And when you think you know something you quickly
@@ -96,6 +97,7 @@ class About extends React.Component {
                     Imposter Syndrome! Before Lambda, yes. Imposter Syndrome is and was real. Now... Full Stack Developer 
                     with an array of tools and languages to create a robust, scalable, and astethically pleasing
                     product within and out of the confounds of any development environment.
+                </Typography>
                 <Box>
                     <Button>
                     <Link href='/projects'>
