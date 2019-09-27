@@ -17,8 +17,8 @@ class Home extends React.Component {
             <Grid>
               <Typography variant='h2'>I am code</Typography>
             </Grid>
-            <Grid>
-              <Link href='/about'><Button>Enter</Button></Link>
+            <Grid style={{marginTop:10}}>
+              <Link href='/about'><Button size="large" variant="contained" color="primary">Enter</Button></Link>
             </Grid>
           </Box>
         </Grid>

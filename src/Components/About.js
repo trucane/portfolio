@@ -88,7 +88,7 @@ class About extends React.Component {
                 <Box className={this.props.classes.aboutBox}>
                 <Typography variant='h4' gutterBottom>Skills</Typography>
                 <Typography variant='overline'>
-                    I started my journey off self taught learning the basic skills HTML, CSS. Then dove into
+                    I started my journey off self taught learning the basic skills HTML, CSS. I then dove into
                     more interactive coding with Javscript. I wanted to do backend instead of using API's so I dove into
                     PHP and MySQL. Later, popular coding was Angular so I dived deep into AngularFire and WOW! I really
                     fell in love. Then came Lambda School. And when you think you know something you quickly
