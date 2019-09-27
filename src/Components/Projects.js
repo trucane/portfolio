@@ -12,8 +12,8 @@ const styles = {
 }
 
 const projects = [
-    {name:'Water My Plants'},
-    {name:'LambdaNext'}
+    {name:'Water My Plants', url:"https://watermyplants-bw.netlify.com/", image:'https://watermyplants-bw.netlify.com/img/hero.svg'},
+    {name:'LambdaNext', url:"https://lambdschoolanext.netlify.com", image:'https://lambdschoolanext.netlify.com/static/media/finding-problem-solution.34e6db16.jpg'}
 ];
 
 
@@ -29,9 +29,9 @@ class Projects extends React.Component{
                         Projects
                     </Typography>
                 </Grid>
-                <Grid container spacing={2} justify="center" style={{paddingTop:'1rem'}} >
+                <Grid container spacing={2} justify="center" style={{padding:'1rem'}} >
                     {projects.map(project =>(
-                        <Grid item key={project.name} >
+                        <Grid item xs={12} sm={6} md={3} key={project.name}>
                             <ProjectCard props={project}/>
                         </Grid>
                     ))}
