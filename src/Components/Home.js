@@ -1,5 +1,4 @@
 import React from "react";
-import TopBar from './Menu/TopBar';
 
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -10,7 +9,10 @@ import { Typography } from "@material-ui/core";
 class Home extends React.Component {
   render() {
     return (
-      <Grid item container style={{height:'500px'}}>
+      <Grid item container style={{height:'100vh',
+        backgroundImage:`url('https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')`,
+        backgroundSize:'cover'
+      }}>
         <Grid container item xs={12} justify='center' alignItems='center'>
           <Box style={{textAlign:'center'}}>
 

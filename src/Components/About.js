@@ -11,7 +11,6 @@ import Link from "@material-ui/core/Link";
 
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
