@@ -148,9 +148,23 @@ class About extends React.Component {
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <Icon>
-                  <MailOutlineIcon></MailOutlineIcon>
-                </Icon>
+                <Box>
+                  <Typography variant="subtitle1">
+                    Contact me at:
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography variant="caption">
+                  programmer.Hleverette@gmail.com
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography variant="caption">
+                  (773) 946-3655
+                  </Typography>
+                </Box>
+                
+                
               </Grid>
             </Grid>
           </Grid>
