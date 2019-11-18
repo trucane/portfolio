@@ -14,23 +14,38 @@ class ProjectCard extends React.Component{
 
          return(
 
-            <Card style={{ padding:20}} className={this.props.classes.barBackground}>
+            <div>
+
+            <Card style={{ padding:10, borderRadius:10, height:'250px', minWidth:"250px"}} className={this.props.classes.projectContainer}>
+
                 <CardMedia
                   component="img"
                   alt='we in here'
-                  height="auto"
+                  height="100%"
+                  width="100%"
                   src={this.props.props.image}
                   title='my image'
-                  style={{width:'100%'}}
                 />
-                <Box>
-                    <Typography component='h1' style={{color:'#fff', textAlign:'center', marginTop:10}}>
-                        <Link href={this.props.props.url}>
-                         {this.props.props.name}
-                        </Link>
-                    </Typography>
-                </Box>
+
+                {/* <Box
+                  alt='we in here'
+                  height="auto"
+                  className={this.props.classes.projectImage}
+                  title='my image'
+                  style={{backgroundImage:"url(" + `${this.props.props.image}` + ")", borderRadius:10}}
+                /> */}
+
+                
             </Card>
+            <Box>
+            <Typography component='h1' style={{color:'#fff', textAlign:'center', marginTop:10}}>
+                <Link href={this.props.props.url}>
+                 {this.props.props.name}
+                </Link>
+            </Typography>
+        </Box>
+
+        </div>
 
         )
 
