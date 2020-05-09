@@ -16,7 +16,7 @@ class ProjectCard extends React.Component{
             <Grid container className={`${this.props.classes.project_container}`}>
 
 
-                <Grid item xs={12} className={`${this.props.classes.grid_item}`}>
+                <Grid item xs={12}>
                     <Card className={this.props.classes.project_snapShot_container}>
 
                         <CardMedia
@@ -30,22 +30,22 @@ class ProjectCard extends React.Component{
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} align-items='center' >
+                <Grid item xs={12}>
 
                     <Grid className={`${this.props.classes.project_description_container}`}>
 
                         <Box className={`${this.props.classes.project_description_box}`}>
-                            <Typography component="h1" variant='h5'align='center'>{this.props.props.name}</Typography>
+                            <Typography component="h1" variant='h5'align='center' gutterBottom='true'>{this.props.props.name}</Typography>
                         </Box>
 
                         <Box>
-                            <Typography component='p' align='center' variant="subtitle1">
+                            <Typography component='p' align='center' variant="subtitle2" color='textSecondary' paragraph='true'>
                                 Stack: React | Redux | Heroku | Node.js | Express | Material UI | Whimsical | SendGrid
                             </Typography>
                         </Box>
 
                         <Box>
-                            <Typography component='body' style={{color:'', tredextAlign:'center', marginTop:10}}>
+                            <Typography component='p' variant='subtitle1' align='center'>
                             Platform for users or stakeholders to post projects that can be upvoted 
                             and become a live project for developers to work on.
                             </Typography>

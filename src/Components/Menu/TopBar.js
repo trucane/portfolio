@@ -13,12 +13,12 @@ class TopMenu extends React.Component{
 
          return(
 
-            <AppBar position="static" className={this.props.classes.barBackground}>
+            <AppBar position="static" className={this.props.classes.main_menu}>
             <Toolbar>
-              <IconButton edge="start" color="inherit" aria-label="menu">
+              <IconButton edge="start" color="black" aria-label="menu">
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" style={{flexGrow:1}}>Henry Leverette</Typography>
+              <Typography variant="h6" style={{flexGrow:1, color:'black'}}>Henry Leverette</Typography>
               
               <Link href='/' className={this.props.classes.topBarLink}>Home</Link>
               <Link href='/about' className={this.props.classes.topBarLink} >About</Link>

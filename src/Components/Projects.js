@@ -18,24 +18,17 @@ class Projects extends React.Component{
 
          return(
 
-            <Grid container >
+            <Grid container className={`${this.props.classes.project}`}>
+                <Typography
+                className={
+                    `${this.props.classes.projectHeader_h1}  }`}
+                    component="h1"
+                    variant="h4"
+                    >
 
-                <Grid container className={`${this.props.classes.projectHeader_H1_Container}  }`} >
-                    <Typography
-                    className={
-                        `${this.props.classes.projectHeader_H1}  }`}
-                        component="h1"
-                        variant="h4"
-                        gutterBottom>
-
-                        Projects
-                    </Typography>
-                </Grid>
-
-
-                {/* <Grid container spacing={2} justify="center" style={{padding:'10rem'}} > */}
-
-
+                    Projects
+                </Typography>
+                
                 <Grid container justify="center">
                     {projects.map(project =>(
                         <Grid  key={project.name}>
