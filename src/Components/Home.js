@@ -1,10 +1,6 @@
 import React from "react";
 
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
-import { Typography } from "@material-ui/core";
+import { Box, Grid, Link, Button, Typography } from "@material-ui/core";
 
 class Home extends React.Component {
   render() {

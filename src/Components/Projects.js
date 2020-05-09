@@ -1,15 +1,10 @@
 import React from 'react';
-import { withStyles } from "@material-ui/styles";
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-
 import ProjectCard from '../Components/Cards/ProjectCard';
 
-const styles = {
-    greyBackground: { backgroundColor: "#f6f7fb" },
-    gridPadding: { padding: "1.5rem 3rem" },
-    divider: { borderTop: "1px #bdb7b7 solid" },
-}
+import {Grid, Typography} from '@material-ui/core';
+
+import { withStyles } from "@material-ui/styles";
+import {styles} from '../resource/stylesWith'
 
 const projects = [
     {name:'Water My Plants', url:"https://watermyplants-bw.netlify.com/", image:'https://watermyplants-bw.netlify.com/img/hero.svg'},
@@ -23,15 +18,27 @@ class Projects extends React.Component{
 
          return(
 
-            <Grid container style={{marginTop:'20px',}} >
-                <Grid container className={`${this.props.classes.greyBackground} ${this.props.classes.gridPadding} ${this.props.classes.divider}`}>
-                    <Typography component="h1" variant="h4" gutterBottom>
+            <Grid container >
+
+                <Grid container className={`${this.props.classes.projectHeader_H1_Container}  }`} >
+                    <Typography
+                    className={
+                        `${this.props.classes.projectHeader_H1}  }`}
+                        component="h1"
+                        variant="h4"
+                        gutterBottom>
+
                         Projects
                     </Typography>
                 </Grid>
-                <Grid container spacing={2} justify="center" style={{padding:'1rem'}} >
+
+
+                {/* <Grid container spacing={2} justify="center" style={{padding:'10rem'}} > */}
+
+
+                <Grid container justify="center">
                     {projects.map(project =>(
-                        <Grid item xs={12} sm={6} md={3} key={project.name}>
+                        <Grid  key={project.name}>
                             <ProjectCard props={project}/>
                         </Grid>
                     ))}
