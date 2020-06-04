@@ -4,6 +4,8 @@ import {withStyles} from '@material-ui/styles';
 import {Toolbar, AppBar, IconButton, Typography, Link} from '@material-ui/core'
 import MenuIcon from "@material-ui/icons/Menu";
 
+import './menu.css'
+
 
 
 
@@ -13,12 +15,12 @@ class TopMenu extends React.Component{
 
          return(
 
-            <AppBar position="static" className={this.props.classes.main_menu}>
+          <AppBar position="static" className={this.props.classes.main_menu}>
             <Toolbar>
-              <IconButton edge="start" color="black" aria-label="menu">
+              <IconButton edge="start" color="primary" aria-label="menu">
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" style={{flexGrow:1, color:'black'}}>Henry Leverette</Typography>
+              <Typography id="bar" variant="h6" style={{flexGrow:1, color:'black'}}>Henry Leverette</Typography>
               
               <Link href='/' className={this.props.classes.topBarLink}>Home</Link>
               <Link href='/about' className={this.props.classes.topBarLink} >About</Link>

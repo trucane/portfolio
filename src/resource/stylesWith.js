@@ -23,6 +23,7 @@ export const styles = {
 
     aboutSectionGrid:{padding:30},
     aboutBox:{padding:70},
+    aboutSection:{marginBottom:70},
     aboutPaper:{
         padding:10,
         color:'blue',

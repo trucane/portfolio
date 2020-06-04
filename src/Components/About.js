@@ -10,10 +10,16 @@ import { withStyles } from "@material-ui/styles";
 import { styles } from "../resource/stylesWith";
 
 
+import images from '../resource/images/images'
+
+
 const skills = [
-    {name:'Angular'},{name:'React'},{name:'Redux'},{name:'Node.Js'},{name:'HTML'},{name:'CSS3'},{name:'LESS'},{name:'SASS'},{name:'Express'},
-    {name:'Javascript'},{name:'JEST'},{name:'JQuery'},{name:'SCRUM'},{name:'Axios'},{name:'PHP'},{name:'SQLite3'},{name:'PostgreSQL'},{name:'MongoDB'},
-    {name:'MYSQL'},{name:'Firebase'},{name:'GIT'},{name:'GitHub'},{name:'Heroku'},{name:'Netlify'}
+    {name:'Angular', img:images.angular},{name:'React', img:images.react},{name:'Redux', img:images.redux},
+    {name:'Node.Js', img:images.node},{name:'HTML', img:images.html},{name:'CSS3', img:images.css},
+    {name:'LESS',img:images.less},{name:'SASS',img:images.sass},{name:'Express',img:images.express},
+    {name:'Javascript',img:images.js},{name:'JEST',img:images.jest},{name:'JQuery',img:images.jquery},{name:'SCRUM',img:images.scrum},
+    {name:'Axios',img:images.axios},{name:'PHP',img:images.php},{name:'SQLite3', img:images.sql},{name:'PostgreSQL', img:images.postgresql},{name:'MongoDB',img:images.mongo},
+    {name:'MYSQL',img:images.mysql},{name:'Firebase',img:images.firebase},{name:'GIT', img:images.git},{name:'GitHub',img:images.github},{name:'Heroku',img:images.heroku},{name:'Netlify',img:images.netlify}
 ]
 
 class About extends React.Component {
@@ -24,15 +30,41 @@ class About extends React.Component {
           <Grid item xs={12} md={6}>
             <Box className={this.props.classes.aboutBox}>
               <Typography variant="h5" gutterBottom>About Me</Typography>
-              <Typography variant="overline">
-                I am a computer programer. As amazing as that sounds it is
-                true. You know you are fullfilled in life when you can
-                honestly say you are doing something you love. I have a passion
-                for creation and programming is the ultimate form of art. I have
+              <Box className={this.props.classes.aboutSection}>
+              <Typography variant="overline" gutterBottom>
+                Software Developer with a passion
+                for creation. Im my opinion programming is the ultimate form of art. I have
                 a thirst for learning and programming offers a continuous change
-                resulting in a wealth of ongoing accessible knowledge. I am
-                code.
+                resulting in a wealth of ongoing accessible knowledge.
               </Typography>
+
+              </Box>
+
+              <Box>
+                <Typography variant="h5" gutterBottom >
+                  My Journey
+                </Typography>
+                <Typography variant='overline'>
+                      I started off my journey as a Developer being self taught learning the basic foundational web development skills... i.e. HTML and CSS. Once having a solid
+                      grasps of that foundation I wanted to learn the client side manipulation of a web appliction so I dove into
+                      more interactive coding with Javacript. While storing data in sessions and the localstorage was helpful, I wanted to learn more robust storage capabilities so I learned to code
+                      on the backend. My journey took me to realtional databases like MySQL, as a result learning PHP and how to run it on an Apache server.
+                      Later, the popular and on demand coding language was Angular so I dived right in with Angular 5. Learing SPA's and the benefits of NoSQL like MongoDB. 
+                      Then came along Googles Firestore and Angularfire and WOW! I really
+                      fell in love.
+
+                      As we all know, trends and changes happen often in programming and technology...and AppS! was where to be. I wanted to use a transitional
+                      platform to perform across all devices and operation systems and thats where I discovered React Native. But to be sufficient in React Native
+                      (in my opinion) I first needed to get profificent with vanilla React.js. And this is where I have been. React.
+                      
+                      It is said you are not a complete programmer without knowledge of Computer Science. Thats where Lambda School came into the picture. And when you think you know something you quickly
+                      get humbled. File structuring, naming conventions, preprocessors, deployment, merge conflicts, testing, algorithms... StakeHolder!!!
+                      What's a StakeHolder??? SCRUM? So I dont need to clean my shoes! Release Canvases, Notion, Version Controls...
+                      Imposter Syndrome! Before Lambda, yes. Imposter Syndrome is and was real. Now... Full Stack Developer 
+                      with an array of tools and languages to create a robust, scalable, and astethically pleasing
+                      product within and out of the confounds of any development environment.
+                  </Typography>
+              </Box>
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -48,18 +80,6 @@ class About extends React.Component {
                   src="https://secureservercdn.net/184.168.47.225/a9e.0ac.myftpupload.com/wp-content/uploads/public-domatin-pictures-dot-net-dog-using-laptop-computer.jpg?time=1560456548"
                   title="my image"
                 />
-                <Box>
-                  <Typography
-                    component="h1"
-                    style={{
-                      color: "#fff",
-                      textAlign: "center",
-                      marginTop: 10
-                    }}
-                  >
-                    I am Code
-                  </Typography>
-                </Box>
               </Card>
             </Box>
           </Grid>
@@ -74,17 +94,6 @@ class About extends React.Component {
             <Grid item xs={12}>
                 <Box className={this.props.classes.aboutBox}>
                 <Typography variant='h4' gutterBottom>Skills</Typography>
-                <Typography variant='overline'>
-                    I started my journey off self taught learning the basic skills HTML, CSS. I then dove into
-                    more interactive coding with Javscript. I wanted to do backend instead of using API's so I dove into
-                    PHP and MySQL. Later, popular coding was Angular so I dived deep into AngularFire and WOW! I really
-                    fell in love. Then came Lambda School. And when you think you know something you quickly
-                    get humbled. File structuring, naming conventions, preprocessors, deployment, merge conflicts, testing, algorithms... StakeHolder!!!
-                    What's a StakeHolder??? SCRUM? So I dont need to clean my shoes! Release Canvases, Notion, Version Controls...
-                    Imposter Syndrome! Before Lambda, yes. Imposter Syndrome is and was real. Now... Full Stack Developer 
-                    with an array of tools and languages to create a robust, scalable, and astethically pleasing
-                    product within and out of the confounds of any development environment.
-                </Typography>
                 <Box>
                     <Button>
                     <Link href='/projects'>
@@ -99,10 +108,16 @@ class About extends React.Component {
                     <Grid key={skill.name} item xs={12} sm={6} md={3}>
                         <List component="nav" aria-label="main mailbox folders">
                             <ListItem>
-                            <ListItemIcon>
-                                <DeveloperMode />
-                            </ListItemIcon>
-                            <ListItemText primary={skill.name} />
+                              <ListItemIcon>
+                              <CardMedia
+                                  style={{height:'30px', width:'30px'}}
+                                  component="img"
+                                  alt="we in here"
+                                  src={skill.img}
+                                  title={skill.name}
+                                />
+                              </ListItemIcon>
+                              <ListItemText primary={skill.name} />
                             </ListItem>
                         </List>
                     </Grid>
@@ -147,7 +162,7 @@ class About extends React.Component {
                 </Box>
                 <Box>
                   <Typography variant="caption">
-                  (773) 946-3655
+                  (219) 316-4600
                   </Typography>
                 </Box>
                 
